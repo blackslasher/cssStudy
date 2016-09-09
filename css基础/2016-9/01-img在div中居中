@@ -1,0 +1,13 @@
+父元素设置相对定位
+
+子元素img设置
+
+position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+
+即可实现img绝对垂直居中div

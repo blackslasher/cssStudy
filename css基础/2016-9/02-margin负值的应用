@@ -1,0 +1,33 @@
+1 margin负值在正常流中的应用
+
+正常流中元素的边界是margin决定的。
+
+margin-left,margin-top会把元素自已移动，在压到左边和上面的元素上，比如width100px和height100px，margin的left和top设个
+-50，那该元素在文档流中实际的占位就是50*50，其他的会压到左和上元素
+
+
+
+margin的right和bottom负值，元素自己不动，但是在占位减少，右边和下面的元素会挤上来
+
+
+
+
+2 margin负值对宽度影响
+
+
+若元素没width，设置margin的左右负值会增大他的宽度
+
+具体的例子见http://www.cnblogs.com/2050/archive/2012/08/13/2636467.html#2457812
+
+
+3 margin负值在浮动元素的应用
+
+假如wrap宽度是400px，有三个浮动的div，宽度是200px，第三个会掉下，若设置第三个margin-left为-200px，第三回压到第二上。
+
+
+4 margin的负值实现绝对垂直居中
+
+
+例子http://www.cnblogs.com/2050/archive/2012/08/13/2636467.html#2457812
+
+不过要知道元素的宽高

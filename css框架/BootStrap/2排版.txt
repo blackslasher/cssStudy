@@ -1,0 +1,13 @@
+1 全局采用了body设置字体14px，行高20px，字体颜色#333的默认样式
+
+2 h1-h6采用了最呆36px的字体大小，再依次减小
+
+3 段落的字号和大小默认继承body的，并加了margin-bottom：10px
+
+4 b，strong表示加粗，em，i表示斜体
+
+5 有text-danger表示颜色，text-left表示左对齐。表示用一个原子类实现一个功能
+
+6 列表ul和ol。类list-unstyle去除默认样式，类list-inline让列表横排显示
+
+7 表格布局，table要先加一个table的类，之后再加扩展类扩展，如table-striped。类似网易的类的扩展 

@@ -1,0 +1,49 @@
+今天看了下flex布局，主要有父元素和子元素，分别为他们设置css即可
+
+
+.box{                         /*父元素*/
+  width: 300px;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;   /*子元素排列方式*/
+  flex-wrap: nowrap;     /*子元素换行方式*/
+  flex-flow:row nowrap;  /*上面2个的合体*/
+  justify-content: center;  /*主轴的对其方式*/
+  align-items: center;    /*和主轴的垂直轴对其方式*/
+}
+.box div{                 /*子元素*/
+  width: 100px;
+  height: 20px;
+  background: red;
+  order:1;                /*子元素的排列顺序，越小越靠前*/
+  flex-grow:1;           /*子元素放大，默认是0*/
+  flex-shrink:1;          /*子元素缩小比例，默认是1*/
+  flex-basis:220px;      /*子元素默认占用父元素空间*/
+  flex:1;                /*上面3个的集合，后2个属性可以省略*/
+  align-self:flex-end;   /*设置单个子元素的对其方式*/
+}
+
+
+
+
+
+例子，做一个水平等宽的导航
+
+ul{
+  display:flex;
+  width: 400px;
+  height: 30px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+}
+li{
+  flex:1;
+  background: red;
+}
+
+
+就上面2句即可实现
+
+参考资料http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
